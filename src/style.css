@@ -1,1 +1,56 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: chartreuse;
+}
+.Card-Generator {
+  display: flex;
+  justify-content: center;
+  padding: none;
+  margin: 0 0 0 0;
+  height: 400px;
+}
+.Card2 {
+  width: 250px;
+  height: 350px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin-top: 20px;
+  &::before {
+    display: flex;
+    justify-content: left;
+    padding-top: 1px;
+    margin-left: 2px;
+    font-size: 80px;
+    margin-top: 0;
+  }
+  &::after {
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+    padding: 5px;
+    font-size: 80px;
+  }
+  &.spade::before,
+  &.spade::after {
+    content: "\2660";
+  }
+  &.club::before,
+  &.club::after {
+    content: "\2663";
+  }
+  &.heart::before,
+  &.heart::after {
+    content: "\2665";
+    color: red;
+  }
+  &.diam::before,
+  &.diam::after {
+    content: "\2666";
+  }
+}
+.Card-number {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 5px;
+  font-size: 80px;
+}

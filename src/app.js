@@ -7,6 +7,7 @@ window.onload = function() {
   document.querySelector(".Card2").classList.add(GenerateRandomCards());
   document.querySelector(".Card-number").innerHTML = GenerateRandomNumber();
 };
+// sorry por el array de esa forma, el formato automatico de codespace lo coloco asi
 function GenerateRandomNumber() {
   let numeros = [
     "A",
